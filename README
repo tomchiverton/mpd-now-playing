@@ -1,0 +1,11 @@
+PRE
+
+Installed and working MPD, figlet and mpc
+
+INSTALL 
+
+Copy all files to ~/bin and make executable
+
+Add ~/bin/now-playing-loop.sh to the end of ~/bin/now-playing-loop.sh
+
+Set Pi to auto boot to text mode and login : https://raspberrypi.stackexchange.com/a/76275/42482 (basically, use raspi-config)

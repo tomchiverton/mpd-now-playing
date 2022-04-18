@@ -1,4 +1,4 @@
-# this goes at end of .bashrc
+#!/bin/bash
 
 while true; do
 ~/bin/now-playing.sh
