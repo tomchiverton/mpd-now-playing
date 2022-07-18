@@ -25,11 +25,11 @@ st=`mpc status | grep play`
 if [ ${#st} -gt 5 ] ; then
   echo 
   cur=`echo $st|cut -d' ' -f2- |sed -e 's/ /    /g'`
-  figlet -t -c -f standard "$cur"
+  figlet -t -r -f letters "$cur"
 
   #echo "`mpc current`"| sed -e 's/ /    /g' | figlet -t -c -ok
   cur=`mpc current | sed -e 's/ /  /g'`
-  font=`ls /usr/share/figlet/*.flf|egrep -v 'ivrit|term|digit|mnemonic|bubble|snakey' | shuf -n1|cut -d/ -f5|cut -d. -f1`
+  font=`ls /usr/share/figlet/*.flf|egrep -v 'ivrit|term|digit|mnemonic|bubble|snakey|pyramid|relief' | shuf -n1|cut -d/ -f5|cut -d. -f1`
   figlet -t -c -ok -f $font $cur
   echo 
 
