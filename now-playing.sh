@@ -25,7 +25,7 @@ st=`mpc status | grep play`
 if [ ${#st} -gt 5 ] ; then
   echo 
   cur=`echo $st|cut -d' ' -f2- |sed -e 's/ /    /g'`
-  figlet -t -r -f mini "$cur"
+  figlet -t -r -f thick "$cur"
 
   #echo "`mpc current`"| sed -e 's/ /    /g' | figlet -t -c -ok
   cur=`mpc current | sed -e 's/ /  /g'`
