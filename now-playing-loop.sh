@@ -1,6 +1,8 @@
 #!/bin/bash
 
 while true; do
-~/bin/now-playing.sh
+	SOURCE=${BASH_SOURCE[0]}
+	DIR=`dirname $SOURCE`
+	$DIR/now-playing.sh
 done
 
