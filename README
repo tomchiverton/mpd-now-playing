@@ -10,6 +10,8 @@ Add ~/bin/now-playing-loop.sh to the end of ~/.profile
 
 Set Pi to auto boot to text mode and login : https://raspberrypi.stackexchange.com/a/76275/42482 (basically, use raspi-config)
 
+apt install mpc figlet
+
 EXAMPLE IMAGES
 https://pbs.twimg.com/media/FX9sVG_XoAMJ-Jz?format=jpg&name=large
 https://twitter.com/thefalken/status/1456550808464629760/photo/1
