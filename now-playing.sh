@@ -29,7 +29,9 @@ if [ ${#st} -gt 5 ] ; then
 
   #echo "`mpc current`"| sed -e 's/ /    /g' | figlet -t -c -ok
   cur=`mpc current | sed -e 's/ /  /g'`
-  font=`ls /usr/share/figlet/*.flf|egrep -v 'mike|3x5|eftiwall|octal|katakana|smkeyboard|chess|ivrit|term|digit|mnemonic|bubble|snakey|pyramid|relief|tinker|relief|hex|decimal|binary|mirror|runic|runyc' | shuf -n1|cut -d/ -f5|cut -d. -f1`
+
+  font=`ls /usr/share/figlet/*.flf|egrep -v '3x5|binary|bubble|chess|decimal|digit|eftichess|eftiwall|hex|ivrit|katakana|mike|mirror|mnemonic|octal|pyramid|relief|runic|runyc|smkeyboard|snakey|term|tinker' | shuf -n1|cut -d/ -f5|cut -d. -f1`
+
   figlet -t -c -ok -f $font $cur
   echo 
 
