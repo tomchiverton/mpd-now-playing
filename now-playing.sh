@@ -32,7 +32,7 @@ if [ ${#st} -gt 5 ] ; then
 
   font=`ls /usr/share/figlet/*.flf|egrep -v '3x5|binary|bubble|chess|decimal|digit|eftichess|eftiwall|hex|ivrit|katakana|mike|mirror|mnemonic|octal|pyramid|relief|runic|runyc|smkeyboard|snakey|term|tinker' | shuf -n1|cut -d/ -f5|cut -d. -f1`
 
-  figlet -t -c -ok -f $font $cur
+  figlet -t -c -ok -f $font "$cur"
   echo 
 
   echo "$p2 `hostname``uptime` $font"
